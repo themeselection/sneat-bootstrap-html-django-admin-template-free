@@ -1,65 +1,113 @@
 <p align="center"></p>
 
 <p align="center">
-   <a href="{ts_product_page_url}" target="_blank">
-      <img src="{svg_logo_url_from_current_repo}" alt="{template_name}-logo" width="60px" height="auto">
+   <a href="https://themeselection.com/item/sneat-free-bootstrap-html-dajngo-admin-template/" target="_blank">
+      <img src="https://user-images.githubusercontent.com/749684/150333149-805037bc-8874-4a1f-876a-61a9683f8ef5.png" alt="sneat-logo" width="60px" height="auto">
    </a>
 </p>
 
 <h1 align="center">
-   <a href="{ts_product_page_url}" target="_blank" align="center">
-      {template_name_titlized}
+   <a href="https://themeselection.com/item/sneat-free-bootstrap-html-dajngo-admin-template/" target="_blank" align="center">
+     Sneat - Free Bootstrap 5 HTML Django Admin Template
    </a>
 </h1>
 
-<p align="center">{template_punchline}</p>
+<p align="center">Most Powerful & Comprehensive Free Django HTML Admin Dashboard Template built for developers!</p>
 
 <p align="center">
    <a href="{licence_url_of_current_repo}">
-      <img src="https://img.shields.io/github/license/themeselection/{repo_name_from_url}" alt="license">
+      <img src="https://img.shields.io/github/license/themeselection/sneat-bootstrap-html-django-admin-template-free" alt="license">
    </a>
-   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/themeselection/{repo_name_from_url}/Deploy">
-   <a href="{repo_url}/releases">
-    <img src="https://img.shields.io/github/release/themeselection/{repo_name_from_url}.svg" alt="GitHub release">
+   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/themeselection/sneat-bootstrap-html-django-admin-template-free/Deploy">
+   <a href="https://github.com/themeselection/sneat-bootstrap-html-django-admin-template-free/releases">
+    <img src="https://img.shields.io/github/release/themeselection/sneat-bootstrap-html-django-admin-template-free.svg" alt="GitHub release">
   </a>
    <a href="https://twitter.com/Theme_Selection" target="_blank">
       <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Theme_Selection">
    </a>
 </p>
 
-<kbd>[![Materio - Vuetify VueJS Free Admin Template Demo Screenshot]({product_demo_image_url})]({ts_product_page_url})</kbd>
+<kbd>[![Sneat - Bootstrap 5 HTML Django Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-bootstrap-django-admin-template-free/marketing/sneat-bootstrap-django-admin-template-free-github.png)](https://themeselection.com/item/sneat-free-bootstrap-html-django-admin-template/)</kbd>
 
 ## Introduction 🚀
 
-{introduction}
+If you’re a developer looking for the most Powerful & comprehensive [**Free Bootstrap 5 HTML Django Admin Template**](https://themeselection.com/item/sneat-free-bootstrap-html-django-admin-template/) built for developers, rich with features, and highly customizable look no further than Sneat. We’ve followed the highest industry standards to bring you the very best admin template that is not only fast and easy to use but highly scalable. Offering ultimate convenience and flexibility, you’ll be able to build whatever application you want with very little hassle.
 
-[View Demo]({direct_demo_url__NOT_PRODUCT_PAGE_URL})
+Build premium quality applications with ease. Use our innovative **[Django admin template](https://themeselection.com/item/category/django-admin-template/)** to create eye-catching, high-quality WebApps. Your apps will be completely responsive, ensuring they’ll look stunning and function flawlessly on desktops, tablets, and mobile devices.
+
+[View Demo](https://demos.themeselection.com/sneat-html-django-admin-template-free/)
 
 ## Installation ⚒️
 
-{installation steps}
+Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/django-init-installation.html) our docs for installation guide.
 
 ## What's Included 📦
 
-{template_includes}
+- Dashboard
+  - Analytics
+- Layouts
+  - Without menu
+  - Without Navbar
+  - Container
+  - Fluid
+  - Blank
+- Pages
+  - Account Settings
+  - Login
+  - Register
+  - Forgot Password
+  - Error
+  - Under Maintenance
+- Cards
+- User Interface
+  - **All Bootstrap Components**
+- Extended UI
+  - Perfect Scrollbar
+  - Text Divider
+- Boxicon
+- Form Elements
+  - Basic Inputs
+  - Input Groups
+- Form Layout
+  - Vertical Form
+  - Horizontal Form
+- Tables
 
 ## What's in Premium Version 💎
 
-| {template_single_word_name} Free Version        | {template_single_word_name} Premium Version       |
-| ----------------------------------------------- | :------------------------------------------------ |
-| [Demo]({direct_demo_url__NOT_PRODUCT_PAGE_URL}) | [Demo]({product_landing_page_url})                |
-| [Download]({ts_product_page_url})               | [Purchase]({ts_premium_product_page_url})                 |
-| Single vertical menu                            | Vertical (+ vertical collapsed) & Horizontal menu |
+| Sneat Free Version                                                                           | Sneat Premium Version                                                                                                                                                                                                                                                                |
+| -------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Demo](https://demos.themeselection.com/sneat-html-django-admin-template-free/)              | [Demo](https://demos.themeselection.com/sneat-html-django-admin-template/demo-1/login/)                                                                                                                                                                                              |
+| [Download](https://themeselection.com/item/sneat-free-bootstrap-html-dajngo-admin-template/) | [Purchase](https://themeselection.com/item/sneat-bootstrap-django-admin-template/)                                                                                                                                                                                                   |
+| Single vertical Menu                                                                         | Vertical Menu + Horizontal Menu                                                                                                                                                                                                                                                      |
+| Simple Light Style                                                                           | Light, Dark & System Style                                                                                                                                                                                                                                                           |
+| Default Theme                                                                                | Default, Semi Dark & Bordered Themes                                                                                                                                                                                                                                                 |
+| Fixed Layout(Menu)                                                                           | Fixed & Static Layout(Menu)                                                                                                                                                                                                                                                          |
+| 1 Simple Dashboard                                                                           | 5 Niche Dashboards                                                                                                                                                                                                                                                                   |
+| -                                                                                            | Multiple Ready to use Application like Email, Chat, Calendar, Kanban, eCommerce, Academy, Logistics, Invoice, Users List, Users View, Roles and Permission etc.                                                                                                                      |
+| -                                                                                            | **Django Transaction CRUD Application** where adding a new transaction involves updating, adding, and deleting, with the condition that only admin possess the permission to perform these actions.                                                                                  |
+| -                                                                                            | **Integrated User Authentication** includes functionalities like user login and registration, along with features for password reset and email verification utilizing EmailMessage. Furthermore, it incorporates both role-based access control and permission-based access control. |
+| Simple From Elements                                                                         | Advance form elements, validation & form wizard                                                                                                                                                                                                                                      |
+| Basic Cards                                                                                  | Basic, Advance , Statistics, Analytics, Gamifications and Actions Cards                                                                                                                                                                                                              |
+| Basic User Interface(Components)                                                             | Advance and Custom User Interfaces(Components)                                                                                                                                                                                                                                       |
+| Two Extended Components                                                                      | Twelve Ready to use Extended Components                                                                                                                                                                                                                                              |
+| -                                                                                            | Quick Search - Quickly navigate between pages (w/ hotkey support)                                                                                                                                                                                                                    |
+| Basic Pages                                                                                  | Authentication Pages in 2 Variants + Ready to use pages like User Profile, Account Settings,FAQ, Help Center, Pricing, Misc etc.                                                                                                                                                     |
+| -                                                                                            | 3D Characters + Illustrations                                                                                                                                                                                                                                                        |
+| Basic tables                                                                                 | Advanced & Data tables                                                                                                                                                                                                                                                               |
+| -                                                                                            | Quick customization using theme config file                                                                                                                                                                                                                                          |
+| -                                                                                            | Leaflet Maps                                                                                                                                                                                                                                                                         |
+| 1 Chart Library                                                                              | 2 Chart Libraries                                                                                                                                                                                                                                                                    |
+| -                                                                                            | Multiple Navbar & Menu Options                                                                                                                                                                                                                                                       |
+| -                                                                                            | Starter-kit                                                                                                                                                                                                                                                                          |
+| -                                                                                            | **Localization support**                                                                                                                                                                                                                                                             |
+| -                                                                                            | RTL Support                                                                                                                                                                                                                                                                          |
+| Regular Support                                                                              | Priority Support                                                                                                                                                                                                                                                                     |
+| Detailed Documentation                                                                       | Detailed Documentation                                                                                                                                                                                                                                                               |
 
 ## Documentation 📜
 
-<!-- If you have docs in wiki then use below line -->
-
-Check GitHub [Wiki]({repo_url}/wiki) of this repo
-
-<!-- If you have live docs then use below line -->
-
-Check out our live [Documentation]({live_docs_link})
+Check out our live [Documentation](https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/django-introduction.html)
 
 ## Browser Support 🖥️
 
@@ -72,16 +120,16 @@ Check out our live [Documentation]({live_docs_link})
 
 Contribution are always welcome and recommended! Here is how:
 
-* Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
-* Clone to your machine `git clone https://github.com/YOUR_USERNAME/REPO_NAME` Make your changes
-* Create a pull request
+- Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
+- Clone to your machine `git clone https://github.com/themeselection/sneat-bootstrap-html-django-admin-template-free` Make your changes
+- Create a pull request
 
 ### Contribution Requirements 🧰
 
-* When you contribute, you agree to give a non-exclusive license to ThemeSelection to use that contribution in any context as we (ThemeSelection) see appropriate.
-* If you use content provided by another party, it must be appropriately licensed using an open source license.
-* Contributions are only accepted through Github pull requests.
-* Finally, contributed code must work in all supported browsers (see above for browser support).
+- When you contribute, you agree to give a non-exclusive license to ThemeSelection to use that contribution in any context as we (ThemeSelection) see appropriate.
+- If you use content provided by another party, it must be appropriately licensed using an open source license.
+- Contributions are only accepted through Github pull requests.
+- Finally, contributed code must work in all supported browsers (see above for browser support).
 
 ## Changelog 📆
 
@@ -94,11 +142,11 @@ For free products, enjoy community support via GitHub issues. Upgrade to Premium
 ## License &copy;
 
 - Copyright © [ThemeSelection](https://themeselection.com/)
-- Licensed under [MIT](LICENSE.md)
+- Licensed under [MIT](LICENSE)
 - All our free items are Open Source and licensed under MIT. You can use our free items for personal as well as commercial purposes. We just need an attribution from your end. Copy the below link and paste it at the footer of your web application or project.
-   ```html
+  ```html
   <a href="https://themeselection.com/">ThemeSelection</a>
-   ```
+  ```
 
 ## Also Available In
 
@@ -133,13 +181,13 @@ For free products, enjoy community support via GitHub issues. Upgrade to Premium
 
 **[ThemeSelection](https://themeselection.com/)** provides Selected high quality, modern design, professional and easy-to-use Free and Premium [Bootstrap Admin Templates](https://themeselection.com/products/category/bootstrap-admin-templates/), [VueJS Admin Templates](https://themeselection.com/products/category/vuejs-admin-templates/), [Laravel Admin Templates](https://themeselection.com/products/category/laravel-admin-templates/), HTML Themes, and [Free UI Kits](https://themeselection.com/products/category/free-ui-kits/) to create your applications faster!.
 
-If you want to [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/) like Materio then do visit [ThemeSelection](https://themeselection.com/).
+If you want to [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/) like Sneat Django then do visit [ThemeSelection](https://themeselection.com/).
 
 ## Useful Links 🎁
 
-* [Freebies](https://themeselection.com/products/category/download-free-admin-templates/)
-* [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/)
-* [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
+- [Freebies](https://themeselection.com/products/category/download-free-admin-templates/)
+- [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/)
+- [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
 
 ## Social Media :earth_africa:
 
