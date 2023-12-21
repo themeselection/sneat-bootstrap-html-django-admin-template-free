@@ -1,8 +1,5 @@
 # Ignoring src and assets folders
 
-# Exclude everything from vendors
-/src/assets/vendor
-
 # Ignoring static/assets folders
 ./assets/
 static/
