@@ -26,7 +26,7 @@
    </a>
 </p>
 
-<kbd>[![Sneat - Bootstrap 5 HTML Django Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-bootstrap-django-admin-template-free/marketing/sneat-bootstrap-django-admin-template-free-github.png)](https://themeselection.com/item/sneat-free-bootstrap-html-django-admin-template/)</kbd>
+<kbd>[![Sneat - Bootstrap 5 HTML Django Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-bootstrap-django-admin-template-free/banner/banner.png)](https://themeselection.com/item/sneat-free-bootstrap-html-django-admin-template/)</kbd>
 
 ## Introduction 🚀
 
