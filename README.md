@@ -15,10 +15,9 @@
 <p align="center">Most Powerful & Comprehensive Free Django HTML Admin Dashboard Template built for developers!</p>
 
 <p align="center">
-   <a href="{licence_url_of_current_repo}">
+   <a href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/blob/main/LICENSE">
       <img src="https://img.shields.io/github/license/themeselection/sneat-bootstrap-html-django-admin-template-free" alt="license">
    </a>
-   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/themeselection/sneat-bootstrap-html-django-admin-template-free/Deploy">
    <a href="https://github.com/themeselection/sneat-bootstrap-html-django-admin-template-free/releases">
     <img src="https://img.shields.io/github/release/themeselection/sneat-bootstrap-html-django-admin-template-free.svg" alt="GitHub release">
   </a>
@@ -85,7 +84,7 @@ Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-templ
 | Fixed Layout(Menu)                                                                           | Fixed & Static Layout(Menu)                                                                                                                                                                                                                                                          |
 | 1 Simple Dashboard                                                                           | 5 Niche Dashboards                                                                                                                                                                                                                                                                   |
 | -                                                                                            | Multiple Ready to use Application like Email, Chat, Calendar, Kanban, eCommerce, Academy, Logistics, Invoice, Users List, Users View, Roles and Permission etc.                                                                                                                      |
-| -                                                                                            | **Django Transaction CRUD Application** where adding a new transaction involves updating, adding, and deleting, with the condition that only admin possess the permission to perform these actions.                                                                                  |
+| -                                                                                            | **Django Transaction CRUD Application** that only allows admin and user with permission to add, update, and delete records.                                                                                                                                                          |
 | -                                                                                            | **Integrated User Authentication** includes functionalities like user login and registration, along with features for password reset and email verification utilizing EmailMessage. Furthermore, it incorporates both role-based access control and permission-based access control. |
 | Simple From Elements                                                                         | Advance form elements, validation & form wizard                                                                                                                                                                                                                                      |
 | Basic Cards                                                                                  | Basic, Advance , Statistics, Analytics, Gamifications and Actions Cards                                                                                                                                                                                                              |
@@ -175,11 +174,19 @@ For free products, enjoy community support via GitHub issues. Upgrade to Premium
    <a href="{pro_angular_version_item_page_link_on_themeselection}" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/da7f0abe-9f83-4205-b691-bc8d2ffef59b"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/9ebeb520-442a-4047-9000-5b13d0e6c000"><img width="auto" height="74px" alt="angular" src="https://github.com/microsoft/vscode/assets/47495003/9ebeb520-442a-4047-9000-5b13d0e6c000"></picture></img></a>&nbsp;&nbsp;
 </p>
 
-<!-- Add other pro variants here. You can get logo URL from here: https://icones.js.org/collection/logos -->
+<!-- Add other pro variants here. You can get the logo URL from here: https://icones.js.org/collection/logos -->
 
 ## Looking For Premium Admin Templates ?? 👀
 
-**[ThemeSelection](https://themeselection.com/)** provides Selected high quality, modern design, professional and easy-to-use Free and Premium [Bootstrap Admin Templates](https://themeselection.com/products/category/bootstrap-admin-templates/), [VueJS Admin Templates](https://themeselection.com/products/category/vuejs-admin-templates/), [Laravel Admin Templates](https://themeselection.com/products/category/laravel-admin-templates/), HTML Themes, and [Free UI Kits](https://themeselection.com/products/category/free-ui-kits/) to create your applications faster!.
+**[ThemeSelection](https://themeselection.com/)** provides Selected high quality, modern design, professional and easy-to-use **Fully Coded Dashboard Templates & UI Kits** to create your applications faster!
+
+- [Bootstrap Admin Templates](https://themeselection.com/products/category/bootstrap-admin-templates/)
+- [VueJS Admin Templates](https://themeselection.com/products/category/vuejs-admin-templates/)
+- [Laravel Admin Templates](https://themeselection.com/products/category/laravel-admin-templates/)
+- [Django Admin Templates](https://themeselection.com/item/category/django-admin-template/)
+- [Reatc (NextJS) Admin Templates](https://themeselection.com/item/category/next-js-admin-template/)
+- [ASP.Net Core Admin Templates](https://themeselection.com/item/category/asp-net-dashboard/)
+- [Free UI Kits](https://themeselection.com/products/category/free-ui-kits/)
 
 If you want to [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/) like Sneat Django then do visit [ThemeSelection](https://themeselection.com/).
 
