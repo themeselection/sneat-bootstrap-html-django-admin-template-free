@@ -1,0 +1,3 @@
+[tool.ruff]
+# Allow lines to be as long as 120 characters.
+line-length = 120

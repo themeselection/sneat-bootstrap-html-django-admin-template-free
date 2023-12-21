@@ -1,0 +1,466 @@
+<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+  <!-- ! Hide app brand if navbar-full -->
+  {% if not navbar_full %}
+  <div class="app-brand demo">
+    <a href="{% url 'index' %}" class="app-brand-link">
+      <span class="app-brand-logo demo">
+        {% include 'partials/logo.html' with width=25 withbg="#696cff" %}
+      </span>
+      <span class="app-brand-text demo menu-text fw-bold ms-2">{% get_theme_variables 'template_name' %}</span>
+    </a>
+
+    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+      <i class="bx bx-chevron-left bx-sm align-middle"></i>
+    </a>
+  </div>
+  {% endif %}
+
+
+  <div class="menu-inner-shadow"></div>
+
+  <ul class="menu-inner py-1">
+
+    <li class="menu-item {% if 'index' == request.resolver_match.url_name or '/dashbord/' in request.path %}active open{% endif %}">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+        <div class="text-truncate" data-i18n="Dashboards">Dashboards</div>
+        <span class="badge bg-danger rounded-pill ms-auto">5</span>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="{% get_theme_variables 'live_preview' %}dashboard/crm/" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="CRM">CRM</div>
+            <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
+          </a>
+        </li>
+        <li class="menu-item {% if 'index' == request.resolver_match.url_name %}active{% endif %}">
+          <a href="{% url 'index' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Analytics">Analytics</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="{% get_theme_variables 'live_preview' %}app/ecommerce/dashboard/" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="eCommerce">eCommerce</div>
+            <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="{% get_theme_variables 'live_preview' %}app/logistics/dashboard/" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Logistics">Logistics</div>
+            <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="{% get_theme_variables 'live_preview' %}app/academy/dashboard/" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Academy">Academy</div>
+            <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Layouts -->
+    <li class="menu-item {% if '/layouts/' in request.path  %}active open{% endif %}">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-layout"></i>
+        <div class="text-truncate" data-i18n="Layouts">Layouts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {% if '/without_menu/' in request.path %}active{% endif %}">
+          <a href="{% url 'layouts-without-menu' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Without menu">Without menu</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/without_navbar/' in request.path %}active{% endif %}">
+          <a href="{% url 'layouts-without-navbar' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Without navbar">Without navbar</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/container/' in request.path %}active{% endif %}">
+          <a href="{% url 'layouts-container' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Container">Container</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/fluid/' in request.path %}active{% endif %}">
+          <a href="{% url 'layouts-fluid' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Fluid">Fluid</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/blank/' in request.path %}active{% endif %}">
+          <a href="{% url 'layouts-blank' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Blank">Blank</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Front Pages -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class='menu-icon tf-icons bx bx-store'></i>
+        <div class="text-truncate" data-i18n="Front Pages">Front Pages</div>
+        <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="{% get_theme_variables 'live_preview' %}front/landing/" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Landing">Landing</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="{% get_theme_variables 'live_preview' %}front/pricing/" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Pricing">Pricing</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="{% get_theme_variables 'live_preview' %}front/payment/" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Payment">Payment</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="{% get_theme_variables 'live_preview' %}front/checkout/" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Checkout">Checkout</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="{% get_theme_variables 'live_preview' %}front/help_center/" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Help Center">Help Center</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-item">
+      <a href="{% get_theme_variables 'live_preview' %}transactions/list/" class="menu-link" target="_blank">
+        <i class="menu-icon tf-icons bx bx-data"></i>
+        <div class="text-truncate" data-i18n="Transactions (CRUD)">Transactions (CRUD)</div>
+        <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
+      </a>
+    </li>
+
+    <li class="menu-header small text-uppercase">
+      <span class="menu-header-text">Apps & Pages</span>
+    </li>
+
+    <li class="menu-item">
+      <a href="{% get_theme_variables 'live_preview' %}app/email/" class="menu-link" target="_blank">
+        <i class="menu-icon tf-icons bx bx-envelope"></i>
+        <div class="text-truncate" data-i18n="Email">Email</div>
+        <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="{% get_theme_variables 'live_preview' %}app/chat/" class="menu-link" target="_blank">
+        <i class="menu-icon tf-icons bx bx-chat"></i>
+        <div class="text-truncate" data-i18n="Chat">Chat</div>
+        <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="{% get_theme_variables 'live_preview' %}app/calendar/" class="menu-link" target="_blank">
+        <i class="menu-icon tf-icons bx bx-calendar"></i>
+        <div class="text-truncate" data-i18n="Calendar">Calendar</div>
+        <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="{% get_theme_variables 'live_preview' %}app/kanban/" class="menu-link" target="_blank">
+        <i class="menu-icon tf-icons bx bx-grid"></i>
+        <div class="text-truncate" data-i18n="Kanban">Kanban</div>
+        <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
+      </a>
+    </li>
+    <!-- Account -->
+    <li class="menu-item {% if '/account_settings/' in request.path %}active open{% endif %}">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-dock-top"></i>
+        <div class="text-truncate" data-i18n="Account Settings">Account Settings</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {% if '/account/' in request.path %}active{% endif %}">
+          <a href="{% url 'pages-account-settings-account' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Account">Account</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/notifications/' in request.path %}active{% endif %}">
+          <a href="{% url 'pages-account-settings-notifications' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Notifications">Notifications</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/connections/' in request.path %}active{% endif %}">
+          <a href="{% url 'pages-account-settings-connections' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Connections">Connections</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Auth -->
+    <li class="menu-item {% if '/auth/' in request.path %}active open{% endif %}">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+        <div class="text-truncate" data-i18n="Authentications">Authentications</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {% if '/login_basic/' in request.path %}active{% endif %}">
+          <a href="{% url 'auth-login-basic' %}" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Login">Login</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/register_basic/' in request.path %}active{% endif %}">
+          <a href="{% url 'auth-register-basic' %}" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Register">Register</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/forgot_password_basic/' in request.path %}active{% endif %}">
+          <a href="{% url 'auth-forgot-password-basic' %}" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Frogot Password">Frogot Password</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Misc -->
+    <li class="menu-item {% if '/misc/' in request.path %}active open{% endif %}">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+        <div class="text-truncate" data-i18n="Misc">Misc</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {% if '/error/' in request.path %}active{% endif %}">
+          <a href="{% url 'pages-misc-error' %}" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Error">Error</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/under_maintenance/' in request.path %}active{% endif %}">
+          <a href="{% url 'pages-misc-under-maintenance' %}" class="menu-link" target="_blank">
+            <div class="text-truncate" data-i18n="Under Maintenance">Under Maintenance</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-header small text-uppercase">
+      <span class="menu-header-text">Components</span>
+    </li>
+
+    <li class="menu-item {% if '/cards/basic/' in request.path %}active{% endif %}">
+      <a href="{% url 'cards-basic' %}" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-collection"></i>
+        <div class="text-truncate" data-i18n="Card">Card</div>
+      </a>
+    </li>
+    <!-- UI -->
+    <li class="menu-item {% if '/ui/' in request.path %}active open{% endif %}">
+      <a href=" javascript:void(0)" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-box"></i>
+        <div class="text-truncate" data-i18n="User interface">User interface</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {% if '/accordion/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-accordion' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Accordion">Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/alerts/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-alerts' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Alerts">Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/badges/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-badges' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Badges">Badges</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/buttons/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-buttons' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Buttons">Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/carousel/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-carousel' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Carousel">Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/collapse/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-collapse' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Collapse">Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/dropdowns/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-dropdowns' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Dropdowns">Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/footer/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-footer' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Footer">Footer</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/list_groups/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-list-groups' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="List Groups">List groups</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/modals/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-modals' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Modals">Modals</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/navbar/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-navbar' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Navbar">Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/offcanvas/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-offcanvas' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Offcanvas">Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/pagination_breadcrumbs/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-pagination-breadcrumbs' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Pagination &amp; Breadcrumbs">Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/progress/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-progress' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Progress">Progress</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/spinners/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-spinners' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Spinners">Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/tabs_pills/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-tabs-pills' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Tabs &amp; Pills">Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/toasts/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-toasts' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Toasts">Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/tooltips_popovers/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-tooltips-popovers' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Tooltips & Popovers">Tooltips &amp; popovers</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/typography/' in request.path %}active{% endif %}">
+          <a href="{% url 'ui-typography' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Typography">Typography</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Extended UI -->
+    <li class="menu-item {% if '/extended_ui/' in request.path %}active open{% endif %}">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-copy"></i>
+        <div class="text-truncate" data-i18n="Extended UI">Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {% if '/perfect_scrollbar/' in request.path %}active{% endif %}">
+          <a href="{% url 'extended-ui-perfect-scrollbar' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Perfect Scrollbar">Perfect Scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/text_divider/' in request.path %}active{% endif %}">
+          <a href="{% url 'extended-ui-text-divider' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Text Divider">Text Divider</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Icons -->
+    <li class="menu-item {% if '/boxicons/' in request.path %}active{% endif %}">
+      <a href="{% url 'icons-boxicons' %}" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-crown"></i>
+        <div class="text-truncate" data-i18n="Boxicons">Boxicons</div>
+      </a>
+    </li>
+
+    <li class="menu-header small text-uppercase">
+      <span class="menu-header-text">Forms & Tables</span>
+    </li>
+
+    <!-- Form -->
+    <li class="menu-item {% if '/forms/' in request.path %}active open{% endif %}">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-detail"></i>
+        <div class="text-truncate" data-i18n="Form Elements">Form Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {% if '/basic_inputs/' in request.path %}active{% endif %}">
+          <a href="{% url 'forms-basic-inputs' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Basic Inputs">Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/input_groups/' in request.path %}active{% endif %}">
+          <a href="{% url 'forms-input-groups' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Input groups">Input groups</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Form Layouts -->
+    <li class="menu-item {% if '/form/' in request.path %}active open{% endif %}">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-detail"></i>
+        <div class="text-truncate" data-i18n="Form Elements">Form Layouts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {% if '/layouts_vertical/' in request.path %}active{% endif %}">
+          <a href="{% url 'form-layouts-vertical' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Vertical Form">Vertical Form</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/layouts_horizontal/' in request.path %}active{% endif %}">
+          <a href="{% url 'form-layouts-horizontal' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Horizontal Form">Horizontal Form</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-item">
+      <a href="{% get_theme_variables 'live_preview' %}form/validation/" class="menu-link" target="_blank">
+        <i class="menu-icon tf-icons bx bx-list-check"></i>
+        <div class="text-truncate" data-i18n="Form Validation">Form Validation</div>
+        <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
+      </a>
+    </li>
+
+    <li class="menu-item {% if '/tables/basic/' in request.path %}active{% endif %}">
+      <a href="{% url 'tables-basic' %}" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-table"></i>
+        <div class="text-truncate" data-i18n="Tables">Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="{% get_theme_variables 'live_preview' %}tables/datatables_basic/" class="menu-link" target="_blank">
+        <i class="menu-icon tf-icons bx bx-grid"></i>
+        <div class="text-truncate" data-i18n="Datatables">Datatables</div>
+        <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
+      </a>
+    </li>
+
+    <li class="menu-header small text-uppercase">
+      <span class="menu-header-text">Misc</span>
+    </li>
+
+    <li class="menu-item">
+      <a href="https://themeselection.com/support/" class="menu-link" target="_blank">
+        <i class="menu-icon tf-icons bx bx-support"></i>
+        <div class="text-truncate" data-i18n="Support">Support</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/django-introduction.html" class="menu-link" target="_blank">
+        <i class="menu-icon tf-icons bx bx-file"></i>
+        <div class="text-truncate" data-i18n="Documentation">Documentation</div>
+      </a>
+    </li>
+
+  </ul>
+
+
+</aside>

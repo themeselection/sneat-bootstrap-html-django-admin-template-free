@@ -1,0 +1,84 @@
+{
+  "editor.wordWrap": "off",
+  "editor.formatOnSave": true,
+  "files.trimFinalNewlines": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "cSpell.language": "en",
+  "search.exclude": {
+    "**/.venv": true,
+    "**/node_modules": true,
+    "**/_temp": true,
+    "*.min.js": true,
+    "*.min.css": true
+  },
+  //Python
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.envFile": "${workspaceFolder}/.env",
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  // "python.analysis.autoImportCompletions": true,
+  // "python.formatting.provider": "black",
+  // "python.linting.enabled": true,
+  // "python.linting.mypyEnabled": true,
+  // "python.linting.lintOnSave": true,
+  // "python.analysis.typeCheckingMode": "basic",
+  // JS
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // Extension: Prettier
+  "prettier.requireConfig": true,
+  "prettier.configPath": ".prettierrc.json",
+  "prettier.ignorePath": ".prettierignore",
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[django-html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "**/*.html": "html",
+    "**/templates/**/*.html": "django-html",
+    "**/templates/**/*.py": "python",
+    "**/templates/**/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "beautify.language": {
+    "html": [
+      "htm",
+      "html",
+      "django-html"
+    ]
+  },
+  // Extension: Git
+  "git.rebaseWhenSync": true,
+  "git.enableSmartCommit": true,
+  "eslint.format.enable": true,
+  // Extension: npm
+  "npm.packageManager": "yarn",
+}

@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    // Django Python extensions
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "donjayamanne.python-environment-manager",
+    "njpwerner.autodocstring",
+    "KevinRose.vsc-python-indent",
+    "charliermarsh.ruff",
+    // Code Formatting
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    // If needed
+    "VisualStudioExptTeam.vscodeintellicode",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "syler.sass-indented",
+    "mrmlnc.vscode-scss",
+    "gamunu.vscode-yarn",
+    "zignd.html-css-class-completion",
+  ]
+}

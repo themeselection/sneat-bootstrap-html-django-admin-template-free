@@ -1,0 +1,36 @@
+{
+  "html": {
+    "allowed_file_extensions": [
+      "htm",
+      "html",
+      "xhtml",
+      "shtml",
+      "xml",
+      "svg",
+      "cfm",
+      "cfml"
+    ],
+    "eol": "\n",
+    "brace_style": "collapse",
+    "indent_char": " ",
+    "indent_with_tabs": false,
+    "indent_size": 2,
+    "indent_level": 0,
+    "preserve_newlines": true,
+    "end_with_newline": true,
+    "max_preserve_newlines": 2,
+    "indent_scripts": "keep",
+    "indent_inner_html": true,
+    "indent_body_inner_html": true,
+    "indent_handlebars": true,
+    "unformatted": [
+      "code",
+      "pre"
+    ],
+    "content_unformatted": [
+      "pre",
+      "code"
+    ],
+    "wrap_line_length": 0
+  }
+}

@@ -1,0 +1,8 @@
+asgiref==3.7.2
+Django==5.0
+gunicorn==21.2.0
+packaging==23.1
+python-dotenv==1.0.0
+sqlparse==0.4.4
+typing_extensions==4.7.1
+whitenoise==6.5.0

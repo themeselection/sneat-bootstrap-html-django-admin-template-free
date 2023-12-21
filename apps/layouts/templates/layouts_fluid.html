@@ -1,0 +1,21 @@
+{% extends layout_path %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}Fluid - Layouts{% endblock %}
+
+{% block content %}
+
+<!-- Layout Demo -->
+<div class="layout-demo-wrapper">
+  <div class="layout-demo-placeholder">
+    <img src="{% static 'img/layouts/layout-fluid-light.png' %}" class="img-fluid" alt="Layout fluid">
+  </div>
+  <div class="layout-demo-info">
+    <h4>Layout fluid</h4>
+    <p>Fluid layout sets a <code>100% width</code> at each responsive breakpoint.</p>
+  </div>
+</div>
+<!--/ Layout Demo -->
+{% endblock %}

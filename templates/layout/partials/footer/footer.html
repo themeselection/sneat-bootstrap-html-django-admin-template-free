@@ -1,0 +1,17 @@
+<footer class="content-footer footer bg-footer-theme">
+  <div class="{{container_class}} d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+    <div class="mb-2 mb-md-0">
+      © <script>
+      document.write(new Date().getFullYear())
+
+      </script>
+      , made with ❤️ by <a href="{% get_theme_variables 'creator_url' %}" target="_blank" class="footer-link fw-medium">{% get_theme_variables 'creator_name' %}</a>
+    </div>
+    <div class="d-none d-lg-inline-block">
+      <a href="{% get_theme_variables 'license_url' %}" class="footer-link me-4" target="_blank">License</a>
+      <a href="{% get_theme_variables 'more_themes' %}" target="_blank" class="footer-link me-4">More Themes</a>
+      <a href="{% get_theme_variables 'documentation' %}" target="_blank" class="footer-link me-4">Documentation</a>
+      <a href="{% get_theme_variables 'support' %}" target="_blank" class="footer-link d-none d-sm-inline-block">Support</a>
+    </div>
+  </div>
+</footer>
