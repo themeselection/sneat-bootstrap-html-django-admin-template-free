@@ -199,17 +199,17 @@
         <div class="text-truncate" data-i18n="Authentications">Authentications</div>
       </a>
       <ul class="menu-sub">
-        <li class="menu-item {% if '/login_basic/' in request.path %}active{% endif %}">
+        <li class="menu-item {% if '/login/' in request.path %}active{% endif %}">
           <a href="{% url 'auth-login-basic' %}" class="menu-link" target="_blank">
             <div class="text-truncate" data-i18n="Login">Login</div>
           </a>
         </li>
-        <li class="menu-item {% if '/register_basic/' in request.path %}active{% endif %}">
+        <li class="menu-item {% if '/register/' in request.path %}active{% endif %}">
           <a href="{% url 'auth-register-basic' %}" class="menu-link" target="_blank">
             <div class="text-truncate" data-i18n="Register">Register</div>
           </a>
         </li>
-        <li class="menu-item {% if '/forgot_password_basic/' in request.path %}active{% endif %}">
+        <li class="menu-item {% if '/forgot_password/' in request.path %}active{% endif %}">
           <a href="{% url 'auth-forgot-password-basic' %}" class="menu-link" target="_blank">
             <div class="text-truncate" data-i18n="Frogot Password">Frogot Password</div>
           </a>

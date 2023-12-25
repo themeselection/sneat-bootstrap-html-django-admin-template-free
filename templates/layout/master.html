@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon/favicon.ico' %}" />
 
     <!-- Include the styles partial -->
-    {% include is_front|yesno:"./partials/styles_front.html,./partials/styles.html" %}
+    {% include "./partials/styles.html" %}
 
     {% block vendor_css %}{% endblock vendor_css %}
 
@@ -25,7 +25,7 @@
 
 
     <!-- Include the scripts partial (required ) -->
-    {% include is_front|yesno:"./partials/scripts_includes_front.html,./partials/scripts_includes.html" %}
+    {% include "./partials/scripts_includes.html" %}
 
   </head>
 
@@ -35,7 +35,7 @@
     {% block layout %}
     {% endblock layout %}
 
-    {% include is_front|yesno:"./partials/scripts_front.html,./partials/scripts.html" %}
+    {% include "./partials/scripts.html" %}
 
     <!--Vendors Javascript-->
     {% block vendor_js %} {% endblock vendor_js %}
