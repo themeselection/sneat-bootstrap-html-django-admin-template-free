@@ -26,7 +26,7 @@ return /******/ (() => { // webpackBootstrap
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   hljs: () => (/* reexport safe */ highlight_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var highlight_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! highlight.js */ \"./node_modules/highlight.js/es/index.js\");\n\n\n\n//# sourceURL=webpack://sneat-bootstrap-html-django-admin-template-free/./libs/highlight/highlight.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   hljs: () => (/* reexport safe */ highlight_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var highlight_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! highlight.js */ \"./node_modules/highlight.js/es/index.js\");\n\ntry {\n  window.hljs = highlight_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n} catch (e) {}\n\n\n//# sourceURL=webpack://sneat-bootstrap-html-django-admin-template-free/./libs/highlight/highlight.js?");
 
 /***/ }),
 

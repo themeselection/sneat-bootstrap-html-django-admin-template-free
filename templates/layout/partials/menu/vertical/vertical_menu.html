@@ -4,13 +4,13 @@
   <div class="app-brand demo">
     <a href="{% url 'index' %}" class="app-brand-link">
       <span class="app-brand-logo demo">
-        {% include 'partials/logo.html' with width=25 withbg="#696cff" %}
+        {% include 'partials/logo.html' with withbg="#696cff" %}
       </span>
       <span class="app-brand-text demo menu-text fw-bold ms-2">{% get_theme_variables 'template_name' %}</span>
     </a>
 
     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
-      <i class="bx bx-chevron-left bx-sm align-middle"></i>
+      <i class="bx bx-chevron-left bx-sm d-flex align-items-center justify-content-center"></i>
     </a>
   </div>
   {% endif %}
@@ -22,20 +22,20 @@
 
     <li class="menu-item {% if 'index' == request.resolver_match.url_name or '/dashbord/' in request.path %}active open{% endif %}">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+        <i class="menu-icon tf-icons bx bx-home-smile"></i>
         <div class="text-truncate" data-i18n="Dashboards">Dashboards</div>
         <span class="badge bg-danger rounded-pill ms-auto">5</span>
       </a>
       <ul class="menu-sub">
+        <li class="menu-item {% if 'index' == request.resolver_match.url_name %}active{% endif %}">
+          <a href="{% url 'index' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Analytics">Analytics</div>
+          </a>
+        </li>
         <li class="menu-item">
           <a href="{% get_theme_variables 'live_preview' %}dashboard/crm/" class="menu-link" target="_blank">
             <div class="text-truncate" data-i18n="CRM">CRM</div>
             <span class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</span>
-          </a>
-        </li>
-        <li class="menu-item {% if 'index' == request.resolver_match.url_name %}active{% endif %}">
-          <a href="{% url 'index' %}" class="menu-link">
-            <div class="text-truncate" data-i18n="Analytics">Analytics</div>
           </a>
         </li>
         <li class="menu-item">
@@ -75,14 +75,14 @@
             <div class="text-truncate" data-i18n="Without navbar">Without navbar</div>
           </a>
         </li>
-        <li class="menu-item {% if '/container/' in request.path %}active{% endif %}">
-          <a href="{% url 'layouts-container' %}" class="menu-link">
-            <div class="text-truncate" data-i18n="Container">Container</div>
-          </a>
-        </li>
         <li class="menu-item {% if '/fluid/' in request.path %}active{% endif %}">
           <a href="{% url 'layouts-fluid' %}" class="menu-link">
             <div class="text-truncate" data-i18n="Fluid">Fluid</div>
+          </a>
+        </li>
+        <li class="menu-item {% if '/container/' in request.path %}active{% endif %}">
+          <a href="{% url 'layouts-container' %}" class="menu-link">
+            <div class="text-truncate" data-i18n="Container">Container</div>
           </a>
         </li>
         <li class="menu-item {% if '/blank/' in request.path %}active{% endif %}">
@@ -97,7 +97,7 @@
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class='menu-icon tf-icons bx bx-store'></i>
         <div class="text-truncate" data-i18n="Front Pages">Front Pages</div>
-        <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
+        <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">PRO</div>
       </a>
       <ul class="menu-sub">
         <li class="menu-item">
@@ -243,7 +243,7 @@
     <li class="menu-item {% if '/cards/basic/' in request.path %}active{% endif %}">
       <a href="{% url 'cards-basic' %}" class="menu-link">
         <i class="menu-icon tf-icons bx bx-collection"></i>
-        <div class="text-truncate" data-i18n="Card">Card</div>
+        <div class="text-truncate" data-i18n="Card">Cards</div>
       </a>
     </li>
     <!-- UI -->
@@ -340,7 +340,7 @@
         </li>
         <li class="menu-item {% if '/tooltips_popovers/' in request.path %}active{% endif %}">
           <a href="{% url 'ui-tooltips-popovers' %}" class="menu-link">
-            <div class="text-truncate" data-i18n="Tooltips & Popovers">Tooltips &amp; popovers</div>
+            <div class="text-truncate" data-i18n="Tooltips & Popovers">Tooltips &amp; Popovers</div>
           </a>
         </li>
         <li class="menu-item {% if '/typography/' in request.path %}active{% endif %}">
