@@ -7,7 +7,7 @@
 THEME_VARIABLES = {
     "creator_name": "ThemeSelection",
     "creator_url": "https://themeselection.com/",
-    "template_name": "sneat",
+    "template_name": "Sneat",
     "template_suffix": "Django Free Admin Template",
     "template_version": "2.0.0",
     "template_free": True,
@@ -22,13 +22,17 @@ THEME_VARIABLES = {
     "live_preview": "https://demos.themeselection.com/sneat-html-django-admin-template/demo-1/",
     "product_page": "https://themeselection.com/item/sneat-bootstrap-django-admin-template/",
     "support": "https://themeselection.com/support/",
-    "more_themes": "https://themeselection.com/",
-    "documentation": "https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/django-introduction.html",
+    "admin_templates": "https://themeselection.com/item/category/admin-templates/",
+    "bootstrap_dashboard": "https://themeselection.com/item/category/bootstrap-admin-templates/",
+    "documentation": "https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation",
     "changelog": "https://demos.themeselection.com/sneat-bootstrap-html-django-admin-template-free/changelog.html",
     "git_repository": "https://github.com/themeselection/sneat-bootstrap-html-django-admin-template-free",
     "git_repo_access": "https://tools.themeselection.com/github/github-access",
     "live_preview_free": "https://demos.themeselection.com/sneat-html-django-admin-template-free/",
     "product_page_free": "https://themeselection.com/item/sneat-free-bootstrap-html-django-admin-template/",
+    "og_title": "Sneat Bootstrap 5 HTML + Django Admin Template by ThemeSelection",
+    "og_image": "https://ts-assets.b-cdn.net/ts-assets/sneat/sneat-bootstrap-django-admin-template/marketing/sneat-html-django-pro-smm-banner.png",
+    "og_type": "product"
 }
 
 # ! Don't change THEME_LAYOUT_DIR unless it's required

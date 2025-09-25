@@ -8,10 +8,10 @@ class Menu {
     this._accordion = config.accordion !== false
     this._closeChildren = Boolean(config.closeChildren)
 
-    this._onOpen = config.onOpen || (() => {})
-    this._onOpened = config.onOpened || (() => {})
-    this._onClose = config.onClose || (() => {})
-    this._onClosed = config.onClosed || (() => {})
+    this._onOpen = config.onOpen || (() => { })
+    this._onOpened = config.onOpened || (() => { })
+    this._onClose = config.onClose || (() => { })
+    this._onClosed = config.onClosed || (() => { })
 
     this._psScroll = null
     this._topParent = null
@@ -224,7 +224,7 @@ class Menu {
           this._onOpened && this._onOpened(this, item, toggleLink, Menu._findMenu(item))
         }
       })
-      .catch(() => {})
+      .catch(() => { })
   }
 
   close(el, closeChildren = this._closeChildren, _autoClose = false) {
@@ -254,7 +254,7 @@ class Menu {
           this._onClosed && this._onClosed(this, item, toggleLink, Menu._findMenu(item))
         }
       })
-      .catch(() => {})
+      .catch(() => { })
   }
 
   _closeOther(item, closeChildren) {

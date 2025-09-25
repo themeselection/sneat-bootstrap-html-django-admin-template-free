@@ -11,6 +11,7 @@
     "esbenp.prettier-vscode",
     "editorconfig.editorconfig",
     "dbaeumer.vscode-eslint",
+    "hookyqr.beautify",
     // If needed
     "VisualStudioExptTeam.vscodeintellicode",
     "formulahendry.auto-close-tag",

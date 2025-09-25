@@ -2,47 +2,60 @@
 
 <!DOCTYPE html>
 
-<html lang="en" class="light-style layout-menu-fixed {{content_layout_class}}" data-assets-path="{% static '/' %}" data-base-url="{{url}}" data-framework="django" data-template="vertical-menu-free">
-
-  <head>
-    <title>{% block title %}{% endblock title %} | {% get_theme_variables 'template_name' %} - {% get_theme_variables 'template_suffix' %}</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <meta name="description" content="{% get_theme_variables 'template_description' %}" />
-    <meta name="keywords" content="{% get_theme_variables 'template_keyword' %}" />
-    <!-- Canonical SEO -->
-    <link rel="canonical" href="{% get_theme_variables 'product_page' %}">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon/favicon.ico' %}" />
-
-    <!-- Include the styles partial -->
-    {% include "./partials/styles.html" %}
-
-    {% block vendor_css %}{% endblock vendor_css %}
-
-    <!--Page CSS-->
-    {% block page_css %}{% endblock page_css %}
+<html lang="en" class="layout-menu-fixed {{navbar_type_class}} {{header_type_class}} {{menu_collapsed_class}} {{footer_fixed_class}} {{display_customizer_class}} {{content_layout_class}}" dir="{{text_direction_value}}" data-skin="{{skins}}" data-bs-theme="{{theme}}" data-assets-path="{% static '/' %}" data-base-url="{{url}}" data-framework="django" data-template="{{ menu_horizontal|yesno:'horizontal,vertical' }}-menu-{{ is_front|yesno:'front,' }}-{{ skins }}-{{ theme}}">
 
 
-    <!-- Include the scripts partial (required ) -->
-    {% include "./partials/scripts_includes.html" %}
+<head>
+  <title>{% block title %}{% endblock title %} | {% get_theme_variables 'template_name' %} - {% get_theme_variables 'template_suffix' %}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <!-- Add Meta -->
+  <!-- remove while creating package  -->
+  <!-- Og Meta -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="{% get_theme_variables 'template_description' %}" />
+  <meta name="keywords" content="{% get_theme_variables 'template_keyword' %}" />
+  <meta property="og:title" content="{% get_theme_variables 'og_title' %}" />
+  <meta property="og:type" content="{% get_theme_variables 'og_type' %}" />
+  <meta property="og:url" content="{% get_theme_variables 'product_page' %}" />
+  <meta property="og:image" content="{% get_theme_variables 'og_image' %}" />
+  <meta property="og:description" content="{{ template_description }}" />
+  <meta property="og:site_name" content="{{ creator_name }}" />
+  <!-- Canonical SEO -->
+  <link rel="canonical" href="{% get_theme_variables 'product_page' %}">
+  <!-- remove while creating package end  -->
 
-  </head>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon/favicon.ico' %}" />
 
-  <body>
-    <!-- beautify ignore:end -->
+  <!-- Include the styles partial -->
+  {% include is_front|yesno:"./partials/styles_front.html,./partials/styles.html" %}
 
-    {% block layout %}
-    {% endblock layout %}
+  {% block vendor_css %}{% endblock vendor_css %}
 
-    {% include "./partials/scripts.html" %}
+  <!--Page CSS-->
+  {% block page_css %}{% endblock page_css %}
 
-    <!--Vendors Javascript-->
-    {% block vendor_js %} {% endblock vendor_js %}
 
-    <!--Page Javascript-->
-    {% block page_js %} {% endblock page_js %}
+  <!-- Include the scripts partial (required ) -->
+  {% include is_front|yesno:"./partials/scripts_includes_front.html,./partials/scripts_includes.html" %}
 
-  </body>
+</head>
+
+<body>
+  <!-- beautify ignore:end -->
+
+  {% block layout %}
+  {% endblock layout %}
+
+  {% include is_front|yesno:"./partials/scripts_front.html,./partials/scripts.html" %}
+
+  <!--Vendors Javascript-->
+  {% block vendor_js %} {% endblock vendor_js %}
+
+  <!--Page Javascript-->
+  {% block page_js %} {% endblock page_js %}
+
+</body>
 
 </html>

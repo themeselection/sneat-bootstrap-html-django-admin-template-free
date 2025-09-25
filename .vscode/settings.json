@@ -47,7 +47,7 @@
     "editor.defaultFormatter": "HookyQR.beautify"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -80,5 +80,5 @@
   "git.enableSmartCommit": true,
   "eslint.format.enable": true,
   // Extension: npm
-  "npm.packageManager": "yarn",
+  "npm.packageManager": "yarn"
 }
