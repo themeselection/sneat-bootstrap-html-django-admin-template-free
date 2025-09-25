@@ -1,28 +1,11 @@
 const path = require('path');
 const { src, dest, series } = require('gulp');
-const replace = require('gulp-replace');
+const purgecss = require('gulp-purgecss');
 const useref = require('gulp-useref');
+var uglify = require('gulp-uglify');
+const fs = require('fs');
 
 module.exports = conf => {
-  // Copy templatePath html files and assets to buildPath
-  // -------------------------------------------------------------------------------
-  const prodCopyTask = function () {
-    return src(`${templatePath}/**/*.html`)
-      .pipe(dest(buildPath))
-      .pipe(src('assets/**/*'))
-      .pipe(dest(`${buildPath}/assets/`));
-  };
-
-  // Rename assets path
-  // -------------------------------------------------------------------------------
-  const prodRenameTasks = function () {
-    return src(`${buildPath}/*.html`)
-      .pipe(replace('../../assets', 'assets'))
-      .pipe(dest(buildPath))
-      .pipe(src(`${buildPath}/assets/**/*`))
-      .pipe(replace('../../assets', 'assets'))
-      .pipe(dest(`${buildPath}/assets/`));
-  };
 
   // Combine js vendor assets in single core.js file using UseRef
   // -------------------------------------------------------------------------------
@@ -30,14 +13,34 @@ module.exports = conf => {
     return src(`${buildPath}/*.html`).pipe(useref()).pipe(dest(buildPath));
   };
 
-  const prodAllTask = series(prodCopyTask, prodRenameTasks, prodUseRefTasks);
+  // Uglify assets/js files
+  //--------------------------------------------------------------------------------
+  const prodMinifyJSTasks = function () {
+    return src(`${buildPath}/assets/js/**/*.js`)
+      .pipe(uglify())
+      .pipe(dest(`${buildPath}/assets/js/`));
+  };
+
+  // Suppress DeprecationWarning for useref()
+  process.removeAllListeners('warning');
+
+  process.on('warning', warning => {
+    if (warning.name === 'DeprecationWarning' && warning.code === 'DEP0180') {
+      return;
+    }
+    console.warn(warning.name, warning.message);
+  });
+
+
+  const prodAllTask = series(
+    prodMinifyJSTasks,
+    prodUseRefTasks
+  );
 
   // Exports
   // ---------------------------------------------------------------------------
 
   return {
-    copy: prodCopyTask,
-    rename: prodRenameTasks,
     useref: prodUseRefTasks,
     all: prodAllTask
   };

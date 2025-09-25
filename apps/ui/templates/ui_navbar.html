@@ -8,7 +8,7 @@
 {% block content %}
 <!-- Basic -->
 <h5 class="pb-1 mb-6">Example</h5>
-<nav class="navbar navbar-expand-lg navbar-light bg-light mb-12">
+<nav class="navbar navbar-expand-lg mb-12 bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="javascript:void(0)">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,12 +27,18 @@
             Dropdown
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
-            <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
             <li>
-              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="javascript:void(0)">Action</a>
             </li>
-            <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+            <li>
+              <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider"/>
+            </li>
+            <li>
+              <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+            </li>
           </ul>
         </li>
         <li class="nav-item">
@@ -40,7 +46,7 @@
         </li>
       </ul>
       <form class="d-flex" onsubmit="return false">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-primary" type="submit">Search</button>
       </form>
     </div>
@@ -51,8 +57,8 @@
 <!-- Supported content -->
 <h5 class="pb-1 mb-6">Supported content</h5>
 <div class="mb-12">
-  <h6 class="mt-2 mb-4 text-muted">Text</h6>
-  <nav class="navbar navbar-example navbar-expand-lg navbar-light bg-light">
+  <h6 class="mt-2 mb-4 text-body-secondary">Text</h6>
+  <nav class="navbar navbar-example navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="javascript:void(0)">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-2" aria-controls="navbar-ex-2" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,8 +76,8 @@
     </div>
   </nav>
 
-  <h6 class="mt-6 mb-4 text-muted">Input Group</h6>
-  <nav class="navbar navbar-example navbar-expand-lg bg-light">
+  <h6 class="mt-6 mb-4 text-body-secondary">Input Group</h6>
+  <nav class="navbar navbar-example navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="javascript:void(0)">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-4">
@@ -85,18 +91,20 @@
           <a class="nav-item nav-link" href="javascript:void(0)">Contact</a>
         </div>
 
-        <form class="d-flex">
+        <form class="d-flex" onsubmit="return false">
           <div class="input-group">
-            <span class="input-group-text"><i class="tf-icons bx bx-search"></i></span>
-            <input type="text" class="form-control" placeholder="Search..." />
+            <span class="input-group-text">
+              <i class="icon-base bx bx-search"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Search..."/>
           </div>
         </form>
       </div>
     </div>
   </nav>
 
-  <h6 class="mt-6 mb-4 text-muted">Button</h6>
-  <nav class="navbar navbar-example navbar-expand-lg bg-light">
+  <h6 class="mt-6 mb-4 text-body-secondary">Button</h6>
+  <nav class="navbar navbar-example navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="javascript:void(0)">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-3">
@@ -116,9 +124,6 @@
       </div>
     </div>
   </nav>
-
-
 </div>
 <!--/ Supported content -->
-
 {% endblock %}

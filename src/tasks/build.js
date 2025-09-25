@@ -66,7 +66,6 @@ module.exports = (conf, srcGlob) => {
       .pipe(gulpIf(conf.sourcemaps, sourcemaps.write()))
       .pipe(dest(conf.distPath + '/css'))
       .pipe(browserSync.stream());
-    cb();
   };
 
   // Build JS
@@ -120,8 +119,12 @@ module.exports = (conf, srcGlob) => {
 
   const FONT_TASKS = [
     {
-      name: 'boxicons',
-      path: 'node_modules/boxicons/fonts/*'
+      name: 'fontawesome',
+      path: 'node_modules/@fortawesome/fontawesome-free/webfonts/*'
+    },
+    {
+      name: 'flags',
+      path: 'node_modules/flag-icons/flags/**/*'
     }
   ].reduce(function (tasks, font) {
     const functionName = `buildFonts${font.name.replace(/^./, m => m.toUpperCase())}Task`;
@@ -162,7 +165,36 @@ module.exports = (conf, srcGlob) => {
     ).pipe(dest(conf.distPath));
   };
 
-  const buildAllTask = series(buildCssTask, buildJsTask, buildFontsTask, buildCopyTask);
+
+  // Iconify task
+  // -------------------------------------------------------------------------------
+  const buildIconifyTask = function (cb) {
+    // Create required directories without copying files
+    const fs = require('fs');
+    const directories = ['./fonts/iconify', './assets/vendor/fonts'];
+
+    directories.forEach(dir => {
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+      }
+    });
+
+    const iconify = require('child_process').spawn('node', ['./fonts/iconify/iconify.js']);
+
+    iconify.stdout.on('data', data => {
+      console.log(data.toString());
+    });
+
+    iconify.stderr.on('data', data => {
+      console.error(data.toString());
+    });
+
+    iconify.on('close', code => {
+      cb();
+    });
+  };
+
+  const buildAllTask = series(buildCssTask, buildJsTask, buildFontsTask, buildCopyTask, buildIconifyTask);
 
   // Exports
   // ---------------------------------------------------------------------------
@@ -172,6 +204,7 @@ module.exports = (conf, srcGlob) => {
     js: buildJsTask,
     fonts: buildFontsTask,
     copy: buildCopyTask,
+    iconify: buildIconifyTask,
     all: buildAllTask
   };
 };
